@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id="whatlist"></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/styles/jquery-latest.min.js"></script>
+    <script src="/styles/items/index.js"></script>
+</head>
+<body onload="start()">
+    <div class="jumbotron">
+        <h1>Wild Cart</h1>
+        <h3 id="hey"></h3>
+        <form class="form-inline">
+            <div id="myDIV" class="input-group">
+              <input type="text" id="myInput" placeholder="Enter new item" class="form-control">
+
+              <input type="number" id="Price" min="0.00" step="0.05" placeholder="Enter a price" class="form-control">
+              <select id="category", class="form-control">
+                  <option value="" selected disabled hidden>Category</option>
+                  <option value="Beverages">Beverages</option>
+                  <option value="Cleaners">Cleaners</option>
+                  <option value="Canned Foods">Canned Food</option>
+                  <option value="Frozen Foods">Frozen Foods</option>
+                  <option value="Fruit">Fruit</option>
+                  <option value="Meat">Meat</option>
+                  <option value="Vegetable">Vegetable</option>
+                  <option value="Other">Other</option>
+              </select>
+        <div class="input-group-append">
+          <button type="button" class="btn btn-success btn-block" onclick="newInput()">Add</button>
+      </div>
+      </div>
+      </form>
+</div>
+
+    <ul id="itemList" class="list-group"></ul>
+
+</body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/">WildCart</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/recipe">RECIPES</a></li>
+          <li><a href="/carts">CARTS</a></li>
+          <li><a href="/logout">LOGOUT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</html>

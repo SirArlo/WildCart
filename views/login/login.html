@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8" />
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/styles/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body>
+    <div class="jumbotron">
+        <h1>Wild Cart</h1>
+    </div>
+
+<div id="LoginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+            <form action="/login" method="post" id="LoginForm">
+                <center>
+                    <input type="text" name="logusername" placeholder="User name" required="">
+                    <br>
+                    <input type="password" name="logpassword" placeholder="Password" required="">
+                </center>
+            </form>
+      </div>
+      <div class="modal-footer">
+            <button type="submit" class="btn btn-success" form="LoginForm">Login</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="RegisterModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Register</h4>
+            </div>
+            <div class="modal-body">
+                <form action="/register" method="post" id="RegisterForm">
+                    <center>
+                        <input type="text" name="FirstName" placeholder="First Name" required="">
+                        <br>
+                        <input type="text" name="LastName" placeholder="Last Name" required="">
+                        <br>
+                        <input type="text" name="username" placeholder="Username" required="">
+                        <br>
+                        <input type="password" name="password" placeholder="Password" required="">
+                        <br>
+                        <input type="password" name="passwordConf" placeholder="Confirm Password" required="">
+                    </center>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success" form="RegisterForm">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="/">WildCart</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a data-toggle="modal" data-target="#RegisterModal">REGISTER</a></li>
+              <li><a data-toggle="modal" data-target="#LoginModal">LOGIN</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</html>
+
+<div class="container-fluid text-center">
+<h2>What we offer</h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h4>Create Carts to easily store your lists while on the go<br><span style="font-style:normal;"></span></h4>
+    </div>
+    <div class="item">
+      <h4>Share your created list with friends!<br><span style="font-style:normal;"></span></h4>
+    </div>
+    <div class="item">
+      <h4>Get Recipes from items in your list for great dinner ideas<br><span style="font-style:normal;"></span></h4>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+</div>

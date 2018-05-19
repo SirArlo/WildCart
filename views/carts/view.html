@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your profile</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/styles/jquery-latest.min.js"></script>
+    <script src="/styles/carts/index.js"></script>
+</head>
+<body onload="start()">
+    <div class="jumbotron">
+        <h1>Wild Cart</h1>
+        <h3 id="greeting"></h3>
+    
+    <form class="form-inline">
+        <div id="myDIV" class="input-group">
+            <input type="text" class="form-control" size="50" id="myInput" placeholder="Enter new Cart">
+            <div class="input-group-append">
+            <button type="button" class="btn btn-success btn-block" onclick="newInput()">Add</button>
+        </div>
+        </div>
+        </form>
+    </div>
+        <ul id="myUL",class = "list-group"></ul>
+</body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="/">WildCart</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="/logout">LOGOUT</a></li>
+                  <li><a href="/carts">CART</a></li>
+                  <li><a href="/recipe">RECIPES</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "wildcart",
+  "version": "0.0.1",
+  "description": "Basic Shopping list web application",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/witseie-elen4010/Group-11-Lab.git"
+  },
+  "author": "Group-11",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/witseie-elen4010/Group-11-Lab/issues"
+  },
+  "homepage": "https://github.com/witseie-elen4010/Group-11-Lab#readme",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mocha": "^5.1.1",
+    "mongoose": "^5.0.16",
+    "require": "^2.4.20",
+    "unirest": "^0.5.1"
+  }
+}
